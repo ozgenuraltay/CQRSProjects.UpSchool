@@ -27,7 +27,8 @@ namespace CQRSProjects.UpSchool.CQRS.Handlers.ProductHandlers
                 Stock = x.Stock,
                 Brand = x.Brand,
                 SalePrice = x.SalePrice,
-                PurchasePrice = x.PurchasePrice
+                PurchasePrice = x.PurchasePrice,
+                Tax=x.Tax
             }).AsNoTracking().ToList();
 
             return result;

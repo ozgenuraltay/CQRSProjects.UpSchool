@@ -18,5 +18,8 @@ namespace CQRSProjects.UpSchool.CQRS.Results.ProductResults
         public decimal PurchasePrice { get; set; }
 
         public decimal SalePrice { get; set; }
+
+        public int Tax { get; set; }
+
     }
 }

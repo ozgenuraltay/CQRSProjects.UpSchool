@@ -28,6 +28,10 @@ namespace CQRSProjects.UpSchool
             services.AddDbContext<ProductContext>();
 
             services.AddScoped<GetProductByAcounterQueryHandler>();
+            services.AddScoped<GetProductByStoragerQueryHandler>();
+            services.AddScoped<GetProductByHumanResourceByIDQueryHandler>();
+            services.AddScoped<GetProductByAccounterByIDQueryHandler>();
+            services.AddScoped<CreateProductCommandHandler>();
 
             services.AddControllersWithViews();
         }
