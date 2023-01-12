@@ -5,7 +5,8 @@
 <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
 
 <div class="container">
-    <h2>Muhasebeci Paneli</h2>
+    <br />
+    <h5>Muhasebeci İçin Ürünler Paneli</h5>
     <br />
     <table class="table table-bordered">
         <tr>
@@ -15,8 +16,8 @@
             <th>Stok Sayısı</th>
             <th>Detaylar IK</th>
             <th>Detaylar Muhasebe</th>
-            <th>Güncelle</th>
-            <th>Sil</th>
+            @*<th>Güncelle</th>
+            <th>Sil</th>*@
         </tr>
         @foreach (var item in Model)
         {
@@ -27,12 +28,12 @@
                 <td>@item.Stock</td>
                 <td><a href="/Product/HumanResourceIndex/@item.ProductID" class="btn btn-outline-dark">Detaylar IK</a></td>
                 <td><a href="/Product/AccounterIndexByID/@item.ProductID" class="btn btn-outline-dark">Detaylar Muhasebe</a></td>
-                <td><a href="#" class="btn btn-outline-warning">Güncelle</a></td>
-                <td><a href="#" class="btn btn-outline-danger">Sil</a></td>
+                @*<td><a href="#" class="btn btn-outline-warning">Güncelle</a></td>
+                <td><a href="#" class="btn btn-outline-danger">Sil</a></td>*@
             </tr>
         }
     </table>
 
     <br />
-    <a href="#" class="btn btn-outline-primary">Yeni Kayıt Girişi</a>
+    <a href="/Product/AddProduct/" class="btn btn-outline-primary">Yeni Kayıt Girişi</a>
 </div>

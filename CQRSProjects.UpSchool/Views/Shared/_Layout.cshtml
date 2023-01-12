@@ -18,11 +18,25 @@
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
+                        <li class="dropdown">
+                            <a class="nav-link text-dark dropdown-toggle" asp-area="" data-toggle="dropdown" asp-controller="Product" asp-action="Index">
+                                Ürünler
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="nav-link text-dark" asp-area="" asp-controller="Product" asp-action="Index">Muhasebe</a></li>
+                                    <li><a class="nav-link text-dark" asp-area="" asp-controller="Product" asp-action="StoragerIndex">Depo</a></li>
+                                    @*<li><a class="nav-link text-dark" asp-area="" asp-controller="Product" asp-action="HumanResourceIndex">IK</a></li>*@
+                                </ul>
+                        </li>
+                        @*<li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Product" asp-action="Index">Ürünler</a>
+                        </li>*@
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="University" asp-action="Index">Üniversiteler</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Student" asp-action="Index">Öğrenciler</a>
                         </li>
                     </ul>
                 </div>

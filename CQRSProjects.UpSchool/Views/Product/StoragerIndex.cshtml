@@ -6,15 +6,16 @@
 <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
 
 <div class="container">
-    <h2>Depocu Paneli</h2>
+    <br />
+    <h5>Depocu İçin Ürünler Paneli</h5>
     <br />
     <table class="table table-bordered">
         <tr>
             <th>#</th>
             <th>Ürün Adı</th>
             <th>Depo</th>
-            <th>Güncelle</th>
-            <th>Sil</th>
+            @*<th>Güncelle</th>
+            <th>Sil</th>*@
         </tr>
         @foreach (var item in Model)
         {
@@ -22,12 +23,12 @@
                 <td>@item.ProductID</td>
                 <td>@item.Name</td>
                 <td>@item.Storage</td>
-                <td><a href="#" class="btn btn-outline-warning">Güncelle</a></td>
-                <td><a href="#" class="btn btn-outline-danger">Sil</a></td>
+                @*<td><a href="#" class="btn btn-outline-warning">Güncelle</a></td>
+                <td><a href="#" class="btn btn-outline-danger">Sil</a></td>*@
             </tr>
         }
     </table>
 
     <br />
-    <a href="#" class="btn btn-outline-primary">Yeni Kayıt Girişi</a>
+    <a href="/Product/AddProduct/" class="btn btn-outline-primary">Yeni Kayıt Girişi</a>
 </div>

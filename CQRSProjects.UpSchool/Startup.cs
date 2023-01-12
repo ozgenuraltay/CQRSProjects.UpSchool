@@ -1,5 +1,7 @@
 using CQRSProjects.UpSchool.CQRS.Handlers.ProductHandlers;
+using CQRSProjects.UpSchool.CQRS.Handlers.StudentHandlers;
 using CQRSProjects.UpSchool.DAL.Context;
+using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -27,11 +29,18 @@ namespace CQRSProjects.UpSchool
         {
             services.AddDbContext<ProductContext>();
 
+            services.AddMediatR(typeof(Startup));
+
             services.AddScoped<GetProductByAcounterQueryHandler>();
             services.AddScoped<GetProductByStoragerQueryHandler>();
             services.AddScoped<GetProductByHumanResourceByIDQueryHandler>();
             services.AddScoped<GetProductByAccounterByIDQueryHandler>();
             services.AddScoped<CreateProductCommandHandler>();
+            services.AddScoped<CreateStudentCommandHandler>();
+            services.AddScoped<GetAllStudentQueryHandler>();
+            services.AddScoped<RemoveStudentCommandHandler>();
+            services.AddScoped<GetStudentByIDQueryHandler>();
+            services.AddScoped<UpdateStudentCommandHandler>();
 
             services.AddControllersWithViews();
         }

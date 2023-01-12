@@ -33,8 +33,43 @@ using CQRSProjects.UpSchool.CQRS.Results.ProductResults;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 4 "C:\Users\ozgen\source\repos\CQRSProjects.UpSchool\CQRSProjects.UpSchool\Views\_ViewImports.cshtml"
+using CQRSProjects.UpSchool.CQRS.Commands.ProductCommands;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 5 "C:\Users\ozgen\source\repos\CQRSProjects.UpSchool\CQRSProjects.UpSchool\Views\_ViewImports.cshtml"
+using CQRSProjects.UpSchool.CQRS.Commands.StudentCommands;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 6 "C:\Users\ozgen\source\repos\CQRSProjects.UpSchool\CQRSProjects.UpSchool\Views\_ViewImports.cshtml"
+using CQRSProjects.UpSchool.CQRS.Commands.UniversityCommands;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 7 "C:\Users\ozgen\source\repos\CQRSProjects.UpSchool\CQRSProjects.UpSchool\Views\_ViewImports.cshtml"
+using CQRSProjects.UpSchool.CQRS.Results.StudentResults;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 8 "C:\Users\ozgen\source\repos\CQRSProjects.UpSchool\CQRSProjects.UpSchool\Views\_ViewImports.cshtml"
+using CQRSProjects.UpSchool.CQRS.Results.UniversityResults;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7091c65830b0329e613be026ede8a57552863778", @"/Views/_ViewStart.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f98aa47452dab4d5bb8b4dc908c0968b662c5491", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"cb008ddbb3103e4f06ef74202d151b3faed8c025", @"/Views/_ViewImports.cshtml")]
     public class Views__ViewStart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

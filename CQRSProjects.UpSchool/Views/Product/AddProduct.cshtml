@@ -1,15 +1,35 @@
-﻿
+﻿@model CreateProductCommand
 @{
     Layout = null;
 }
 
-<!DOCTYPE html>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>AddProduct</title>
-</head>
-<body>
-</body>
-</html>
+<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+
+<div class="container">
+    <br />
+    <form method="post">
+        <br />
+        <label>
+            Ürün Adı:
+            <input type="text" asp-for="Name" class="form-control" />
+        </label>
+        <br />
+        <label>
+            Ürün Markası:
+            <input type="text" asp-for="Brand" class="form-control" />
+        </label>
+        <br />
+        <label>
+            Ürün Stoğu:
+            <input type="text" asp-for="Stock" class="form-control" />
+        </label>
+        <br />
+        <label>
+            Ürün Fiyatı:
+            <input type="text" asp-for="SalePrice" class="form-control" />
+        </label>
+        <br />
+        <button class="btn btn-outline-primary">Ürünü Ekle</button>
+    </form>
+</div>
